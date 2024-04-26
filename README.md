@@ -19,50 +19,52 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 12. [Malware Development](#malware-development)
 13. [System & Kernel Programming](#system--kernel-programming)
 14. [Privilege Escalation](#privilege-escalation)
-15. [Post Exploitation and Lateral Movement](#post-exploitation-and-lateral-movement)
+15. [Post-exploitation (and Lateral Movement)](#post-exploitation-and-lateral-movement)
 16. [Persistence](#persistence)
 17. [Breaking Hash](#breaking-hash)
-18. [Command and Control (C&C)](#command-and-control-cc)
+18. [C&C (Command and Control)](#cc-command-and-control)
 19. [DLL](#dll)
 20. [DNS Rebinding](#dns-rebinding)
 21. [LDAP](#ldap)
-22. [Evasion Techniques](#evasion-techniques)
+22. [Evasion](#evasion)
 23. [Steganography](#steganography)
 24. [Kerberoasting and Kerberos](#kerberoasting-and-kerberos)
 25. [Mimikatz](#mimikatz)
 26. [RDP](#rdp)
 27. [NTLM](#ntlm)
 28. [YARA Language](#yara-language)
-29. [Windows API vs DLL](#windows-api-vs-dll)
-30. [Antivirus vs EDR](#antivirus-vs-edr)
+29. [Windows API And DLL Difference](#windows-api-and-dll-difference)
+30. [Antivirus and EDR Difference](#antivirus-and-edr-difference)
 31. [NTDLL](#ntdll)
 32. [Native API](#native-api)
 33. [Windows Driver](#windows-driver)
 34. [Tunneling](#tunneling)
 35. [Shadow File](#shadow-file)
 36. [SAM File](#sam-file)
-37. [LSA and LSASS](#lsa-and-lsass)
-38. [SSPs (Security Support Providers)](#ssps-security-support-providers)
+37. [LSA](#lsa)
+38. [LSASS](#lsass)
 39. [WDIGEST](#wdigest)
 40. [CredSSP](#credssp)
 41. [MSV](#msv)
 42. [LiveSSP](#livessp)
 43. [TSpkg](#tspkg)
 44. [CredMan](#credman)
-45. [EDR, NDR, XDR](#edr-ndr-xdr)
+45. [EDR NDR XDR](#edr-ndr-xdr)
 46. [Polymorphic Malware](#polymorphic-malware)
-47. [Pass-the-Hash, Pass-the-Ticket, Golden Tickets](#pass-the-hash-pass-the-ticket-or-build-golden-tickets)
+47. [Pass-the-Hash, Pass-the-Ticket or Build Golden Tickets](#pass-the-hash-pass-the-ticket-or-build-golden-tickets)
 48. [Firewall](#firewall)
-49. [CIM Class](#cim-class)
-50. [CDB, NTSD, KD, Gflags, GflagsX, PE Explorer](#cdb-ntsd-kd-gflags-gflagsx-pe-explorer)
-51. [Windows SDK](#windows-sdk)
-52. [IDA](#ida)
-53. [Sysinternals Suite](#sysinternals-suite)
-54. [UWP Processes](#uwp-processes)
-55. [IDS vs IPS](#ids-vs-ips)
-56. [Undocumented Functions](#undocumented-functions)
-57. [Process Explorer vs Process Hacker](#process-explorer-vs-process-hacker)
-58. [CLR](#clr)
+49. [WinDBG (Windows Debugger)](#windbg-windows-debugger)
+50. [PE (Portable Executable)](#pe-portable-executable)
+51. [ICMP](#icmp)
+52. [Major Microsoft frameworks for Windows](#major-microsoft-frameworks-for-windows)
+53. [Services and Processes](#services-and-processes)
+54. [svchost](#svchost)
+55. [CIM Class](#cim-class)
+56. [CDB, NTSD, KD, Gflags, GflagsX, PE Explorer](#cdb-ntsd-kd-gflags-gflagsx-pe-explorer)
+57. [Sysinternals Suite (tools)](#sysinternals-suite-tools)
+58. [Undocumented Functions](#undocumented-functions)
+59. [Process Explorer vs Process Hacker](#process-explorer-vs-process-hacker)
+60. [CLR (Common Language Runtime)](#clr-common-language-runtime)
 
 ## Initial Access
 
@@ -120,7 +122,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Post Exploitation and Lateral Movement
+## Post-exploitation (and Lateral Movement)
 
 - TBD
 
@@ -132,7 +134,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Command and Control (C&C)
+## C&C (Command and Control)
 
 - TBD
 
@@ -148,7 +150,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Evasion Techniques
+## Evasion
 
 - TBD
 
@@ -176,11 +178,11 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Windows API vs DLL
+## Windows API And DLL Difference
 
 - TBD
 
-## Antivirus vs EDR
+## Antivirus and EDR Difference
 
 - TBD
 
@@ -208,11 +210,11 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## LSA and LSASS
+## LSA
 
 - TBD
 
-## SSPs (Security Support Providers)
+## LSASS
 
 - TBD
 
@@ -240,7 +242,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## EDR, NDR, XDR
+## EDR NDR XDR
 
 - TBD
 
@@ -248,11 +250,35 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Pass-the-Hash, Pass-the-Ticket, Golden Tickets
+## Pass-the-Hash, Pass-the-Ticket or Build Golden Tickets
 
 - TBD
 
 ## Firewall
+
+- TBD
+
+## WinDBG (Windows Debugger)
+
+- TBD
+
+## PE (Portable Executable)
+
+- TBD
+
+## ICMP
+
+- TBD
+
+## Major Microsoft frameworks for Windows
+
+- TBD
+
+## Services and Processes
+
+- TBD
+
+## svchost
 
 - TBD
 
@@ -264,23 +290,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## Windows SDK
-
-- TBD
-
-## IDA
-
-- TBD
-
-## Sysinternals Suite
-
-- TBD
-
-## UWP Processes
-
-- TBD
-
-## IDS vs IPS
+## Sysinternals Suite (tools)
 
 - TBD
 
@@ -292,7 +302,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 - TBD
 
-## CLR
+## CLR (Common Language Runtime)
 
 - TBD
 
