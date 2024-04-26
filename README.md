@@ -66,7 +66,7 @@ Welcome to the Red Team Interview Questions repository! This repository aims to 
 
 ## Initial Access
 
-- TBD
+- a
 
 ## Windows Network
 
