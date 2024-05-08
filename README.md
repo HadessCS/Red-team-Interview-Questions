@@ -1,6 +1,8 @@
 
 # Red Team Interview Questions
 
+![Red Team Interview Questions](redteam-interview-questions.jpeg "Red Team Interview Questions")
+
 Welcome to the Red Team Interview Questions repository! This repository aims to provide a comprehensive list of topics and questions that can be helpful for both interviewers and candidates preparing for red team-related roles. Whether you're looking to assess your knowledge or preparing to interview candidates, these questions cover a wide range of essential topics in the field of red teaming.
 
 ## Table of Contents
