@@ -9,41 +9,41 @@ Este es una bifurcacion del repositorio original:
 ## Índice
 
 1. [Acceso Inicial](#initial-access)
-2. [Windows Network](#windows-network)
+2. [Red de Windows](#windows-network)
 3. [Active Directory](#active-directory)
-4. [OS Language Programming](#os-language-programming)
+4. [Programación en Lenguajes del SO](#os-language-programming)
 5. [PowerShell](#powershell)
-6. [Windows Internals](#windows-internals)
-7. [DNS Server](#dns-server)
-8. [Windows API](#windows-api)
-9. [Macro Attack](#macro-attack)
-10. [APT Groups](#apt-groups)
-11. [EDR and Antivirus](#edr-and-antivirus)
-12. [Malware Development](#malware-development)
-13. [System & Kernel Programming](#system--kernel-programming)
-14. [Privilege Escalation](#privilege-escalation)
-15. [Post-exploitation (and Lateral Movement)](#post-exploitation-and-lateral-movement)
-16. [Persistence](#persistence)
-17. [Breaking Hash](#breaking-hash)
-18. [C&C (Command and Control)](#cc-command-and-control)
+6. [Internals de Windows](#windows-internals)
+7. [Servidor DNS](#dns-server)
+8. [API de Windows](#windows-api)
+9. [Ataque con Macros](#macro-attack)
+10. [Grupos APT](#apt-groups)
+11. [EDR y Antivirus](#edr-and-antivirus)
+12. [Desarrollo de Malware](#malware-development)
+13. [Programación de Sistema y Kernel](#system--kernel-programming)
+14. [Escalada de Privilegios](#privilege-escalation)
+15. [Post-explotación (y Movimiento Lateral)](#post-exploitation-and-lateral-movement)
+16. [Persistencia](#persistence)
+17. [Romper Hash](#breaking-hash)
+18. [C&C (Comando y Control)](#cc-command-and-control)
 19. [DLL](#dll)
-20. [DNS Rebinding](#dns-rebinding)
+20. [Rebinding de DNS](#dns-rebinding)
 21. [LDAP](#ldap)
-22. [Evasion](#evasion)
-23. [Steganography](#steganography)
-24. [Kerberoasting and Kerberos](#kerberoasting-and-kerberos)
+22. [Evasión](#evasion)
+23. [Esteganografía](#steganography)
+24. [Kerberoasting y Kerberos](#kerberoasting-and-kerberos)
 25. [Mimikatz](#mimikatz)
 26. [RDP](#rdp)
 27. [NTLM](#ntlm)
-28. [YARA Language](#yara-language)
-29. [Windows API And DLL Difference](#windows-api-and-dll-difference)
-30. [Antivirus and EDR Difference](#antivirus-and-edr-difference)
+28. [Lenguaje YARA](#yara-language)
+29. [Diferencia entre API de Windows y DLL](#windows-api-and-dll-difference)
+30. [Diferencia entre Antivirus y EDR](#antivirus-and-edr-difference)
 31. [NTDLL](#ntdll)
-32. [Native API](#native-api)
-33. [Windows Driver](#windows-driver)
-34. [Tunneling](#tunneling)
-35. [Shadow File](#shadow-file)
-36. [SAM File](#sam-file)
+32. [API Nativa](#native-api)
+33. [Controlador de Windows](#windows-driver)
+34. [Túnel](#tunneling)
+35. [Archivo Sombra](#shadow-file)
+36. [Archivo SAM](#sam-file)
 37. [LSA](#lsa)
 38. [LSASS](#lsass)
 39. [WDIGEST](#wdigest)
@@ -53,22 +53,22 @@ Este es una bifurcacion del repositorio original:
 43. [TSpkg](#tspkg)
 44. [CredMan](#credman)
 45. [EDR NDR XDR](#edr-ndr-xdr)
-46. [Polymorphic Malware](#polymorphic-malware)
-47. [Pass-the-Hash, Pass-the-Ticket or Build Golden Tickets](#pass-the-hash-pass-the-ticket-or-build-golden-tickets)
+46. [Malware Polimórfico](#polymorphic-malware)
+47. [Pass-the-Hash, Pass-the-Ticket o Crear Tickets Dorados](#pass-the-hash-pass-the-ticket-or-build-golden-tickets)
 48. [Firewall](#firewall)
-49. [WinDBG (Windows Debugger)](#windbg-windows-debugger)
+49. [WinDBG (Depurador de Windows)](#windbg-windows-debugger)
 50. [PE (Portable Executable)](#pe-portable-executable)
 51. [ICMP](#icmp)
-52. [Major Microsoft frameworks for Windows](#major-microsoft-frameworks-for-windows)
-53. [Services and Processes](#services-and-processes)
+52. [Principales frameworks de Microsoft para Windows](#major-microsoft-frameworks-for-windows)
+53. [Servicios y Procesos](#services-and-processes)
 54. [svchost](#svchost)
-55. [CIM Class](#cim-class)
+55. [Clase CIM](#cim-class)
 56. [CDB, NTSD, KD, Gflags, GflagsX, PE Explorer](#cdb-ntsd-kd-gflags-gflagsx-pe-explorer)
-57. [Sysinternals Suite (tools)](#sysinternals-suite-tools)
-58. [Undocumented Functions](#undocumented-functions)
+57. [Suite Sysinternals (herramientas)](#sysinternals-suite-tools)
+58. [Funciones No Documentadas](#undocumented-functions)
 59. [Process Explorer vs Process Hacker](#process-explorer-vs-process-hacker)
 60. [CLR (Common Language Runtime)](#clr-common-language-runtime)
-
+    
 ## Acceso Inicial:
 ### Pregunta 1:
 **¿Cómo se obtiene normalmente el acceso inicial a una red objetivo?**
@@ -122,44 +122,45 @@ Este es una bifurcacion del repositorio original:
 ---
 
 ## Active Directory
-### Question 1:
-**What is Active Directory, and what role does it play in a Windows network?**
-- *Answer:* Active Directory is a directory service developed by Microsoft for managing network resources, including users, computers, and groups, in a Windows domain environment.
+### Pregunta 1:
+**¿Qué es Active Directory y qué papel juega en una red de Windows?**
+- *Respuesta:* Active Directory es un servicio de directorio desarrollado por Microsoft para gestionar recursos de red, incluidos usuarios, computadoras y grupos, en un entorno de dominio de Windows.
 
-### Question 2:
-**How are users and resources organized within an Active Directory structure?**
-- *Answer:* Users and resources are organized into a hierarchical structure called a domain, which can contain organizational units (OUs) for further organization and delegation of administrative tasks.
+### Pregunta 2:
+**¿Cómo se organizan los usuarios y recursos dentro de una estructura de Active Directory?**
+- *Respuesta:* Los usuarios y recursos se organizan en una estructura jerárquica llamada dominio, que puede contener unidades organizativas (OU) para una mayor organización y delegación de tareas administrativas.
 
-### Question 3:
-**Explain the process of authentication and authorization in Active Directory.**
-- *Answer:* Authentication verifies the identity of users and computers accessing resources in the Active Directory domain, while authorization determines the permissions granted to authenticated users or groups.
+### Pregunta 3:
+**Explique el proceso de autenticación y autorización en Active Directory.**
+- *Respuesta:* La autenticación verifica la identidad de los usuarios y computadoras que acceden a los recursos en el dominio de Active Directory, mientras que la autorización determina los permisos otorgados a los usuarios o grupos autenticados.
 
-### Question 4:
-**What are some common Active Directory attack techniques, and how can they be mitigated?**
-- *Answer:* Common attack techniques include pass-the-hash, golden ticket attacks, and Kerberoasting. Mitigation strategies include enforcing strong password policies, monitoring privileged account usage, and implementing least privilege access controls.
+### Pregunta 4:
+**¿Cuáles son algunas técnicas comunes de ataque a Active Directory y cómo se pueden mitigar?**
+- *Respuesta:* Las técnicas comunes de ataque incluyen pass-the-hash, ataques con tickets dorados y Kerberoasting. Las estrategias de mitigación incluyen aplicar políticas de contraseñas fuertes, monitorear el uso de cuentas privilegiadas e implementar controles de acceso de menor privilegio.
 
-### Question 5:
-**Why is Active Directory a prime target for attackers?**
-- *Answer:* Active Directory centralizes authentication and authorization services, making it a valuable target for gaining control over a network.
+### Pregunta 5:
+**¿Por qué Active Directory es un objetivo principal para los atacantes?**
+- *Respuesta:* Active Directory centraliza los servicios de autenticación y autorización, lo que lo convierte en un objetivo valioso para obtener control sobre una red.
 
 ---
 
-## OS Language Programming
-### Question 1:
-**What are the main differences between C and C++?**
-- *Answer:* C is a procedural programming language, while C++ is an object-oriented programming language that also supports procedural programming.
+## Programación en Lenguajes del SO
+### Pregunta 1:
+**¿Cuáles son las principales diferencias entre C y C++?**
+- *Respuesta:* C es un lenguaje de programación procedural, mientras que C++ es un lenguaje de programación orientado a objetos que también admite programación procedural.
 
-### Question 2:
-**Explain the concept of pointers in C/C++?**
-- *Answer:* Pointers are variables that store memory addresses, allowing direct manipulation of memory locations and efficient memory management.
+### Pregunta 2:
+**Explique el concepto de punteros en C/C++.**
+- *Respuesta:* Los punteros son variables que almacenan direcciones de memoria, lo que permite la manipulación directa de ubicaciones de memoria y una gestión eficiente de la memoria.
 
-### Question 3:
-**How do you manage memory allocation in C/C++?**
-- *Answer:* In C, memory allocation is managed using functions like malloc and free, while in C++, memory management is often handled by constructors and destructors of objects.
+### Pregunta 3:
+**¿Cómo se maneja la asignación de memoria en C/C++?**
+- *Respuesta:* En C, la asignación de memoria se maneja utilizando funciones como malloc y free, mientras que en C++, la gestión de memoria a menudo es manejada por los constructores y destructores de los objetos.
 
-### Question 4:
-**Can you provide an example of a basic C/C++ program?**
-- *Answer:* simple "Hello, World!" program in C++ (it can be more complicated and this question is just for example):
+### Pregunta 4:
+**¿Puede proporcionar un ejemplo de un programa básico en C/C++?**
+- *Respuesta:* Un simple programa de "Hola, Mundo!" en C++ (puede ser más complicado y esta pregunta es solo para ejemplo):
+```cpp
 ```cpp
 #include <iostream>
 using namespace std;
