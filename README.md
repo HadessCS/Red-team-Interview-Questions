@@ -1,13 +1,13 @@
-
-# Red Team Interview Questions
+# Preguntas de Entrevista para acceder a un Linux Red Team
 
 ![Red Team Interview Questions](redteam-interview-questions_cover.jpeg "Red Team Interview Questions")
 
-Welcome to the Red Team Interview Questions repository! This repository aims to provide a comprehensive list of topics and questions that can be helpful for both interviewers and candidates preparing for red team-related roles. Whether you're looking to assess your knowledge or preparing to interview candidates, these questions cover a wide range of essential topics in the field of red teaming.
+Bienvenido al repositorio de preguntas para entrevistas Linux Red Team. El objetivo de este repositorio es proporcionar una lista completa de temas y preguntas que pueden ser útiles tanto para los entrevistadores como para los candidatos que se preparan para puestos relacionados con los equipos rojos. Tanto si quieres evaluar tus conocimientos como si te estás preparando para entrevistar a candidatos, estas preguntas cubren una amplia gama de temas esenciales en el campo de los equipos rojos.
 
-## Table of Contents
+## Índice
 
-1. [Initial Access](#initial-access)
+Traducción realizada con la versión gratuita del traductor DeepL.com
+1. [Acceso Inicial](#initial-access)
 2. [Windows Network](#windows-network)
 3. [Active Directory](#active-directory)
 4. [OS Language Programming](#os-language-programming)
