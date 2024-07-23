@@ -4,9 +4,10 @@
 
 Bienvenido al repositorio de preguntas para entrevistas Linux Red Team. El objetivo de este repositorio es proporcionar una lista completa de temas y preguntas que pueden ser útiles tanto para los entrevistadores como para los candidatos que se preparan para puestos relacionados con los equipos rojos. Tanto si quieres evaluar tus conocimientos como si te estás preparando para entrevistar a candidatos, estas preguntas cubren una amplia gama de temas esenciales en el campo de los equipos rojos.
 
+Este es una bifurcacion del repositorio original:  
+
 ## Índice
 
-Traducción realizada con la versión gratuita del traductor DeepL.com
 1. [Acceso Inicial](#initial-access)
 2. [Windows Network](#windows-network)
 3. [Active Directory](#active-directory)
@@ -68,56 +69,56 @@ Traducción realizada con la versión gratuita del traductor DeepL.com
 59. [Process Explorer vs Process Hacker](#process-explorer-vs-process-hacker)
 60. [CLR (Common Language Runtime)](#clr-common-language-runtime)
 
-## Initial Access:
-### Question 1:
-**How do you typically gain initial access to a target network?**
-- *Answer:* Initial access to a target network is typically gained through techniques such as phishing, exploiting vulnerabilities, or leveraging misconfiguration.
+## Acceso Inicial:
+### Pregunta 1:
+**¿Cómo se obtiene normalmente el acceso inicial a una red objetivo?**
+- *Respuesta:* El acceso inicial a una red objetivo suele obtenerse mediante técnicas como el phishing, la explotación de vulnerabilidades o el aprovechamiento de una configuración incorrecta.
 
-### Question 2:
-**What are some common methods used for gaining initial access to a target network?**
-- *Answer:* Common methods include:
-  - Phishing attacks
-  - Exploiting software vulnerabilities (e.g., remote code execution)
-  - Brute-force attacks on authentication mechanisms
-  - Social engineering tactics
+### Pregunta 2:
+**¿Cuáles son algunos de los métodos habituales utilizados para obtener acceso inicial a una red objetivo?**
+- Respuesta:* Entre los métodos más comunes se incluyen
+  - Ataques de phishing
+  - Explotación de vulnerabilidades de software (por ejemplo, ejecución remota de código)
+  - Ataques de fuerza bruta a los mecanismos de autenticación
+  - Tácticas de ingeniería social
 
-### Question 3:
-**Can you explain the difference between phishing and spear phishing?**
-- *Answer:* 
-  - **Phishing:** A generic term for deceptive email messages aimed at tricking recipients into divulging sensitive information or installing malware.
-  - **Spear Phishing:** A targeted form of phishing that tailors the attack to a specific individual or organization, often using personalized information to increase the chances of success.
+### Pregunta 3:
+**¿Podría explicar la diferencia entre phishing y spear phishing?**
+- *Respuesta:* 
+  - **Phishing:** Término genérico para referirse a mensajes de correo electrónico engañosos cuyo objetivo es engañar a los destinatarios para que divulguen información confidencial o instalen malware.
+  - Phishing dirigido:** Una forma de phishing dirigido que adapta el ataque a una persona u organización específica, a menudo utilizando información personalizada para aumentar las posibilidades de éxito.
 
-### Question 4:
-**How can an attacker exploit vulnerable services to gain initial access?**
-- *Answer:* Attackers can exploit vulnerable services by targeting known vulnerabilities in software running on networked devices. This includes unpatched operating systems, outdated software versions, or misconfigured services exposed to the internet.
+### Pregunta 4:
+**¿Cómo puede un atacante explotar servicios vulnerables para obtener acceso inicial?**
+- Respuesta:* Los atacantes pueden explotar servicios vulnerables atacando vulnerabilidades conocidas en el software que se ejecuta en dispositivos conectados en red. Esto incluye sistemas operativos sin parches, versiones de software obsoletas o servicios mal configurados expuestos a Internet.
 
-### Question 5:
-**Describe a scenario where an attacker leverages social engineering for initial access.**
-- *Answer:* In a social engineering scenario, an attacker might impersonate a trusted individual or organization to trick a victim into revealing login credentials, downloading malware disguised as legitimate software, or providing access to sensitive information.
+### Pregunta 5:
+**Describa un escenario en el que un atacante aprovecha la ingeniería social para el acceso inicial.**
+- Respuesta:* En un escenario de ingeniería social, un atacante puede hacerse pasar por una persona u organización de confianza para engañar a una víctima y conseguir que revele sus credenciales de acceso, descargue malware disfrazado de software legítimo o proporcione acceso a información sensible.
 
 ---
 
-## Windows Network:
-### Question 1:
-**Explain the role of DHCP, DNS, TCP/IP, and OSI in Windows networking.**
-- **Answer:** DHCP is responsible for IP address allocation, DNS for name resolution, TCP/IP for communication, and OSI serves as a conceptual model.
+## Red Windows:
+### Pregunta 1:
+**Explique el papel de DHCP, DNS, TCP/IP y OSI en las redes Windows.
+- Respuesta:** DHCP es responsable de la asignación de direcciones IP, DNS de la resolución de nombres, TCP/IP de la comunicación y OSI sirve como modelo conceptual.
 
-### Question 2:
-**Explain the role of DHCP in network configuration.**
-- **Answer:** DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and other network configuration parameters to devices on a network, simplifying network setup and management.
+### Pregunta 2:
+**Explique el papel del DHCP en la configuración de red.**
+- Respuesta:** DHCP (Dynamic Host Configuration Protocol) asigna automáticamente direcciones IP y otros parámetros de configuración de red a los dispositivos de una red, simplificando su configuración y gestión.
 
-### Question 3:
-**How does DNS resolve domain names to IP addresses?**
-- **Answer:** DNS (Domain Name System) translates human-readable domain names (e.g., example.com) into IP addresses that computers use to communicate over a network.
+### Pregunta 3:
+**¿Cómo resuelve DNS los nombres de dominio a direcciones IP?**
+- Respuesta:** DNS (Domain Name System) traduce nombres de dominio legibles por humanos (por ejemplo, ejemplo.com) en direcciones IP que los ordenadores utilizan para comunicarse a través de una red.
 
-### Question 4:
-**Describe the TCP/IP model and its layers.**
-- **Answer:** The TCP/IP model consists of four layers: Application, Transport, Internet, and Network Interface. Each layer handles specific aspects of network communication, such as data formatting, routing, and error detection.
+### Pregunta 4:
+**Describa el modelo TCP/IP y sus capas.**
+- **Respuesta:** El modelo TCP/IP consta de cuatro capas: Aplicación, Transporte, Internet e Interfaz de Red. Cada capa maneja aspectos específicos de la comunicación de red, como el formato de los datos, el enrutamiento y la detección de errores.
 
-### Question 5:
-**How does VPN enhance network security and privacy?**
-- **Answer:** VPN (Virtual Private Network) encrypts network traffic between a user's device and a VPN server, providing confidentiality and integrity for data transmitted over insecure networks like the internet.
-
+### Pregunta 5:
+**¿Cómo mejora la VPN la seguridad y privacidad de la red?**
+- Respuesta:** La VPN (Red Privada Virtual) cifra el tráfico de red entre el dispositivo de un usuario y un servidor VPN, proporcionando confidencialidad e integridad a los datos transmitidos a través de redes inseguras como Internet.
+  
 ---
 
 ## Active Directory
